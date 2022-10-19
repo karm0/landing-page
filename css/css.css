@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+section{
+    padding: 5rem 20rem;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff8400;
+    border-radius: 10px;
+}
+#btn{
+    padding: 1.5rem;
+    font-size: 2rem;
+    background: #ff8400;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#btn:hover{
+    background: #000;
+    color: #fff;
+    letter-spacing: 3px;
+}
+/* start header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    padding: 20px 70px;
+    background: #ff8400;
+    width: 100%;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+.logo span{
+    color: #000;
+}
+header .navbar.active{
+    clip-path: polygon(0 0, 100% 0,100% 100%, 0 100%);
+}
+header .navbar a{
+    font-size: 2rem;
+    color: #fff;
+    margin: 8px;
+}
+header .navbar a:hover{
+    color: #000;
+}
+header .icon i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+header .icon i:hover{
+    color: #000;
+}
+header .search-bar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 201;
+    background: #000;
+    border: 1px solid;
+    padding: 10px 10px;
+    clip-path: polygon(0 0, 100% 0,100% 0, 0 0);
+}
+header .search-bar.active{
+    clip-path: polygon(0 0, 100% 0,100% 100%, 0 100%);
+}
+header .search-bar #btn-search{
+    width: 100%;
+    padding: 5px;
+    text-transform: none;
+    font-size: 1.7rem;
+    border-radius: 5px;
+}
+header .search-bar label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+header .search-bar label:hover{
+    color: #000;
+}
+/* end header */
+
+/* start login */
+.login{
+    position: fixed;
+    top: -120%;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+    transition: all .5s linear;
+}
+.login.active{
+    top: 0;
+}
+.login form{
+    width: 70%;
+    background: #fff;
+    margin: 5px;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.login h3{
+    font-size: 3rem;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+.login .email, .password{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    outline: none;
+}
+.login .submit{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    font-size: 2rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login .checkbox{
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.login label{
+    font-size: 1.5rem;
+}
+.login p{
+    font-size: 1.5rem;
+    margin: 5px;
+}
+.login p a:hover{
+    text-decoration: underline;
+}
+.login #x{
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+#menu-bar{
+    display: none;
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+/* end login */
+
+/* start container */
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    z-index: 0;
+}
+.container .text{
+    text-align: center;
+}
+.container .text h3{
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 13rem;
+}
+.container .text p{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.container .text a{
+    padding: 1.5rem;
+    font-size: 2rem;
+    background: #ff8400;
+    color: #fff;
+    border-radius: 5px;
+}
+.container .text a:hover{
+    color: #000;
+}
+.container .first-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.container .all-imgs{
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0, .7);
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .all-imgs .btn-img{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+.container .all-imgs .btn-img.active{
+    background: #ff8400;
+}
+/* end container */
+
+/* start booking */
+.text-boking{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-boking span{
+    font-size: 3rem;
+    background: #ff8400ba;
+    color: #fff;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    margin-left: .3rem;
+    text-transform: uppercase;
+}
+.text-boking .space{
+    background: none;
+}
+.booking .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+.booking .img{
+    flex: 1 1 40rem;
+} 
+.booking .img img{
+    width: 100%;
+}
+.booking form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+}
+.booking .row form .inputs{
+    padding: .5rem 0;
+}
+.booking .row form .inputs input{
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem;
+    border: 1rem solid rgba(138, 138, 138, 0.1); 
+    outline: none;
+}
+.booking .row form .inputs h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+/* end booking */
+
+
+/* start packages */
+.packages .Cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.packages .Cards .box{
+    flex: 1 1 30rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    padding: .5rem;
+}
+.packages .Cards .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+.packages .Cards .box img:hover{
+    transform: scale(1.1, 1.1);
+}
+.packages .Cards .box .content{
+    padding: 2rem;
+}
+.packages .Cards .box .content h3{
+    font-size: 1.5rem;
+}
+.packages .Cards .box .content h3 i{
+    color: #ff8400;
+    letter-spacing: 3px;
+}
+.packages .Cards .box .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.packages .Cards .box .content .stars i{
+    color: #ff8400;
+    font-size: 1.7rem;
+}
+.packages .Cards .box .content .price{
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+#btn-2{
+    padding: 1.2rem;
+    background: #ff8400;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+#btn-2:hover{
+    background: #000;
+    color: #fff;
+    letter-spacing: 3px;
+}
+/* end packages */
+
+/* start contact */
+.contact{
+    background: #333;
+}
+.contact .info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .info .about{
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+    text-align: center;
+}
+.contact .info .about h1{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+.contact .info .about p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    display: block;
+    color: #fff;
+}
+.contact .info .about a{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    display: block;
+    color: #fff;
+}
+.contact .info .about a i {
+    margin: 0 .5rem;
+}
+.contact .info .about a:hover{
+    color: #ff8400;
+}
+.contact h2{
+    font-size: 2rem;
+    color: #fff;
+}
+.contact span{
+    color: #ff8400;
+}
+/* end contact */
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:991px) {
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+@media (max-width:768px) {
+    #menu-bar{
+        display: flex;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #000;
+        padding: 10px;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0,100% 0, 0 0);
+    }
+    header .navbar a{
+        display: block;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        background: #fff;
+        color: #000;
+    }
+    header .navbar a:hover{
+        letter-spacing: 3px;
+        background: rgb(220, 218, 218);
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .text-boking span{
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karm Shaker</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="https://kit.fontawesome.com/fe25e1c65d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+      <!-- start header -->
+      <header>
+        
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-solid fa-user-large" id="login-btn"></i>
+            
+        </div>
+
+        <form action="" class="search-bar">
+            <input type="search" placeholder="What are you looking for..." id="btn-search">
+            <label for="btn-search" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+    </header>
+    <!-- end header -->
+
+    <!-- start login -->
+    <div class="login">
+        <i class="fa-solid fa-xmark" id="x"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" placeholder="Enter your email here" class="email">
+            <input type="password" placeholder="Enter your password here" class="password">
+            <input type="submit" value="login in" class="submit">
+            <input type="checkbox" class="checkbox">
+            <label for="checkbox">remember me</label>
+            <p>forget password?<a href="#">click here</a></p>
+            <p>don't have and account?<a href="#">click here</a></p>
+        </form>
+    </div>
+    <!-- end login -->
+
+    <!-- start container -->
+    <section class="container" id="home">
+        <div class="text">
+            <h3>adventure is waiting for you</h3>
+            <p>there's no time to waste</p>
+            <a href="#" id="btn">discover more</a>
+        </div>
+        <div class="all-imgs">
+            <span class="btn-img active" data-src="img/pexels-asad-photo-maldives-1591373.jpg"></span>
+            <span class="btn-img" data-src="img/pexels-elena-zhuravleva-1457812.jpg"></span>
+            <span class="btn-img" data-src="img/pexels-francesco-ungaro-2325446.jpg"></span>
+            <span class="btn-img" data-src="img/pexels-pierre-blaché-3369102.jpg"></span>
+            <span class="btn-img" data-src="img/pexels-spencer-davis-4353632.jpg"></span>
+        </div>
+        <div class="first-img">
+            <img src="img/pexels-asad-photo-maldives-1591373.jpg" id="img-slider"></>
+        </div>
+    </section>
+    <!-- end container -->
+
+    <!-- start booking -->
+    <section class="booking" id="book">
+        <h1 class="text-boking">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="img">
+                <img src="img/img-1.png">
+            </div>
+            <form action="">
+                <div class="inputs">
+                    <h3>where will you go ?</h3>
+                    <input type="text" placeholder="write a place">
+                </div>
+                <div class="inputs">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputs">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputs">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" id="btn" value="book now">
+            </form>
+        </div>
+    </section>
+    <!-- end booking -->
+
+    <!-- start packages -->
+    <section class="packages" id="packages">
+        <h1 class="text-boking">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="Cards">
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="img/AlAzhar.jpg">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"> AlAzhar</i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">0 eg</div>
+                    <a href="#" id="btn-2">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="img/aswan.jpg">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"> aswan</i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">0 eg</div>
+                    <a href="#" id="btn-2">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="img/Cairo Tower.jpg">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"> Cairo Tower</i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">0 eg</div>
+                    <a href="#" id="btn-2">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="img/dahab.jpg">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"> dahab</i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">0 eg</div>
+                    <a href="#" id="btn-2">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="img/Khan Al-Khalily.jpg">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"> Khan Al-Khalily</i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">0 eg</div>
+                    <a href="#" id="btn-2">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="img/Pyramids.jpg">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"> Pyramids</i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">0 eg</div>
+                    <a href="#" id="btn-2">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end packages -->
+
+    <!-- start info -->
+    <section class="contact" id="contact">
+        <div class="info">
+            <div class="about">
+                <h1>about us</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Deserunt, earum?</p>
+            </div>
+            <div class="about">
+                <h1>aquick links</h1>
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="about">
+                <h1>follow us</h1>
+                <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+        <h2>creat by <span>@karm shaker</span></h2>
+    </section>
+    <!-- end info -->
+    <script src="js/java.js"></script>
+</body>
+</html>
